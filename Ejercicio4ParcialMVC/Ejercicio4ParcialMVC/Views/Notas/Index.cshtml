@@ -1,0 +1,71 @@
+﻿@model Ejercicio4ParcialMVC.Models.calculo
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Calculo de notas</h2>
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    <div class="form-group">
+        <h4>Ingrese el Nombre</h4>
+        @Html.LabelFor(Model => Model.nombre, new { @class = "control-label" })
+        @Html.TextBoxFor(Model => Model.nombre, new { @class = "form-control", type = "text" })
+    </div>
+    <div class="form-group">
+        <h4>Ingrese el Carnet</h4>
+        @Html.LabelFor(Model => Model.carnet, new { @class = "control-label" })
+        @Html.TextBoxFor(Model => Model.carnet, new { @class = "form-control", type = "text" })
+    </div>
+    <div class="form-group">
+        <h4>Ingrese La materia</h4>
+        @Html.LabelFor(Model => Model.materia, new { @class = "control-label" })
+        @Html.TextBoxFor(Model => Model.materia, new { @class = "form-control", type = "text" })
+    </div>
+    <div class="form-group">
+        <h4>Ingrese la Nota 1</h4>
+        @Html.LabelFor(Model => Model.nota1, new { @class = "control-label" })
+        @Html.TextBoxFor(Model => Model.nota1, new { @class = "form-control", type = "text" })
+    </div>
+    <div class="form-group">
+        <h4>Ingrese la Nota 2</h4>
+        @Html.LabelFor(Model => Model.nota2, new { @class = "control-label" })
+        @Html.TextBoxFor(Model => Model.nota2, new { @class = "form-control", type = "double" })
+    </div>
+    <div class="form-group">
+        <h4>Ingrese la Nota 3</h4>
+        @Html.LabelFor(Model => Model.nota3, new { @class = "control-label" })
+        @Html.TextBoxFor(Model => Model.nota3, new { @class = "form-control", type = "double" })
+    </div>
+
+        <div class="form-group">
+            <input type="submit" value="Create" class="btn btn-success" />
+        </div>
+}
+<br /> <br />
+@if (ViewBag.resultado != null)
+{
+    <h4>Nombre:</h4>
+    <h4>@Model.nombre</h4>
+    <h4>codigo:</h4>
+    <h4>@Model.carnet</h4>
+    <h4>
+        LA UNIVERSIDAD TECNOLÓGICA DE EL SALVADOR FACULTAD DE INFORMATICA Y CIENCIAS APLICADAS ESCUELA DE INFORMATICA CATEDRA DE PROGRMACION ASIGNATURA:<br />
+        ProgramacionII PROFESOR : Ing.José Orlando Girón <br />
+        INSTRUCTOR: EVALUACION: 1ra. 2da. 3ra. 4ta. 5ta.SEC.CICLO 02<br />
+        - 2020 NOTA FINAL EVALUACION ORDINARIA DIFERIDA <br />
+        No. DE LISTA: ALUMNO: CARNET: CARRERA: FECHA: NOTA:<br />
+        Los instructores tienen la suficiente autoridad para velar por el buen resultado de esta prueba cualquier
+        consulta debe usted realizarla durante los primeros treinta minutos después de iniciarse el examen. <br />
+        ASISTENCIA 0.0 % TRABAJO 0.0 % ACTIVIDADES PRACTICAS 20.0 % AVANCE DE ESTUDIO 30.0 % PARCIAL 50.0 %<br />
+        COMPETENCIA: Crear un sitio web. Valor de la Cátedra: SOLIDARIDAD</h4>
+        <h4>Materia:</h4>
+        <h4>@Model.materia</h4>
+
+
+
+<h4>Nota Final:&nbsp;@ViewBag.resultado</h4>
+
+    }
+    <br /> <br />
+
