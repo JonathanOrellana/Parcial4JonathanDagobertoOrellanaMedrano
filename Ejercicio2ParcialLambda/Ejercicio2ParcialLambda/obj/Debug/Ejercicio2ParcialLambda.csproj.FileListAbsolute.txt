@@ -1,0 +1,6 @@
+E:\2do Ciclo 2020\Programacion III\Ejercicio2ParcialLambda\Ejercicio2ParcialLambda\bin\Debug\Ejercicio2ParcialLambda.exe.config
+E:\2do Ciclo 2020\Programacion III\Ejercicio2ParcialLambda\Ejercicio2ParcialLambda\obj\Debug\Ejercicio2ParcialLambda.csprojResolveAssemblyReference.cache
+E:\2do Ciclo 2020\Programacion III\Ejercicio2ParcialLambda\Ejercicio2ParcialLambda\bin\Debug\Ejercicio2ParcialLambda.exe
+E:\2do Ciclo 2020\Programacion III\Ejercicio2ParcialLambda\Ejercicio2ParcialLambda\bin\Debug\Ejercicio2ParcialLambda.pdb
+E:\2do Ciclo 2020\Programacion III\Ejercicio2ParcialLambda\Ejercicio2ParcialLambda\obj\Debug\Ejercicio2ParcialLambda.exe
+E:\2do Ciclo 2020\Programacion III\Ejercicio2ParcialLambda\Ejercicio2ParcialLambda\obj\Debug\Ejercicio2ParcialLambda.pdb
